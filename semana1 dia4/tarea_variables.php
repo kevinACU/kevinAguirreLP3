@@ -1,5 +1,5 @@
 <?php
-$dia = 25; //se declara una variable del tipo integer
+$dia = 24; //se declara una variable del tipo integer
 $sueldo = 758.43; //se declara una variable de tipo double
 $nombre = "utic"; //se declara una variable de tipo string
 $exite = true ; //se declara una variable de tipo boolean
