@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mi Proyecto</title>
+
+        <!--Archivos CSS-->
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        
+        <!--logo y menú-->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text">
+                        <span class="logo">Mi Proyecto</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                    <ul class="menu">
+                        <li><a href="#">Misión</a></li>
+                        <li><a href="#">Objetivo</a></li>
+                        <li><a href="#">Visión</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <img src="img/equipo.jpg" >
+        </div>
+
+        <!--Servicios-->
+        <div class="row column text-center">
+            <h2>Servicios</h2>
+        </div>
+        <div class="row small-up-2 large-up-3">
+            <div class="column">
+                <img class="thumbnail" src="img/self-service.png">
+                <h5 class="text-center">Servicios</h5>
+                <p>
+                    Nullan massa metus, elementum dignissin dapibus eget, mollis id odio. Phasellus ac 
+                    arcu a nisi posuere luctus. Suspendisse ornase felis eu odio semper, fringilla rutrum puris scelerisque.
+                </p>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/maintenance.png">
+                <h5 class="text-center">Servicios 2</h5>
+                <p>Nullam massa metus, elementum dignissim dapibus eget, mollis od odio. Phasellus ac 
+                    arcu a nisi posuere luctus. Suspendisse ornase felis eu odio semper, fringilla rutrum puris scelerisque.
+                </p>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/catering.png">
+                <h5 class="text-center">Servicios 3</h5>
+                <p>Nullam massa metus, elementum dignissim dapibus eget, mollis od odio. Phasellus ac 
+                    arcu a nisi posuere luctus. Suspendisse ornase felis eu odio semper, fringilla rutrum puris scelerisque.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <!--Footer-->
+        <footer>
+            <div class="menu-text text-center">
+                Mi Proyecto @ <script>document.write(new Date().getFullYear())</script>  
+            </div>
+        </footer>
+
+        <!--Archivos JavaScript-->
+        <script src="js/jquery-2.1.4.min.js"></script> 
+        <script src="js/foundation.js"></script>
+        <!--<script src="js/motion-ui.min.js"></script>-->
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
