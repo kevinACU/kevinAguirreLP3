@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/smart_wizard.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/smart_wizard_theme_arrows.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-200">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Iniciar asistente de varios pasos
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Asistente inteligente modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="smartwizard">
+                            <ul>
+                                <li><a href="#step-1">Paso 1<br /><small>Información de la cuenta</small></a></li>
+                                <li><a href="#step-2">Paso 2<br /><small>Información personal</small></a></li>
+                                <li><a href="#step-3">Paso 3<br /><small>Información de pago</small></a></li>
+                                <li><a href="#step-4">Paso 4<br /><small>Confirmar detalles</small></a></li>
+                            </ul>
+                            <div class="mt-4">
+                                <div id="step-1">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Nombre completo" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Correo electrónico" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <input type="password" class="form-control" placeholder="Contraseña" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="password" class="form-control" placeholder="Repite contraseña" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Dirección" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Ciudad" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Departamento" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Nacionalidad" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Número de tarjeta" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Nombre del titular de la tarjeta" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="CVV" required />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Número de teléfono móvil" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>Gracias por enviar sus datos, le enviaremos un correo electrónico de confirmación. Revisaremos sus datos y le responderemos.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.smartWizard.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

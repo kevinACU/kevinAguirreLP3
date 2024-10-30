@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+ <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crear Formularios en Línea con Bootstrap</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="form-body">
+       <div class="row">
+          <div class="form-holder">
+            <div class="form-content">
+              <div class="form-items">
+                <h3>Regístrate hoy</h3>
+                <p>Complete los datos a continuación.</p>
+                <form class="requires-validation" novalidate>
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                     name="name"
+                      placeholder="Nombre completo"
+                      required
+                    />
+                    <div class="valid-feedback">
+                      ¡El campo de usuario es válido!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡El campo de nombre de usuario no puede quedar en blanco!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      placeholder="Dirección de correo electrónico"
+                      required
+                    />
+                    <div class="valid-feedback">
+                      ¡El campo de correo electrónico es válido!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡El campo de correo electrónico no puede quedar en blanco!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <select class="form-select mt-3" required>
+                      <option selected disabled value="">Posición</option>
+                      <option value="jweb">Junior Web Developer</option>
+                      <option value="sweb">Senior Web Developer</option>
+                      <option value="pmanager">Project Manager</option>
+                    </select>
+                    <div class="valid-feedback">
+                      ¡Has seleccionado una posición!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Por favor seleccione una posición!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name="password"
+                      placeholder="Contraseña"
+                      required
+                    />
+                    <div class="valid-feedback">
+                      ¡El campo de contraseña es válido!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡El campo de contraseña no puede quedar en blanco!
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mt-3">
+                    <label class="mb-3 mr-1" for="gender">Género: </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="gender"
+                      id="male"
+                      autocomplete="off"
+                      required
+                    />
+                    <label class="btn btn-sm btn-outline-secondary" for="male"
+                      >Masculino</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="gender"
+                      id="female"
+                      autocomplete="off"
+                      required
+                    />
+                    <label class="btn btn-sm btn-outline-secondary" for="female"8                      >Femenino</label
+                    >
+                   <input
+                      type="radio"
+                      class="btn-check"
+                      name="gender"
+                      id="secret"
+                      autocomplete="off"
+                      required
+                    />
+                    <label class="btn btn-sm btn-outline-secondary" for="secret"
+                      >No especificado</label
+                    >
+                    <div class="valid-feedback mv-up">
+                      ¡Has seleccionado un género!
+                    </div>
+                    <div class="invalid-feedback mv-up">
+                      ¡Por favor seleccione un género!
+                    </div>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label"
+                      >Confirmo que todos los datos son correctos</label
+                    >
+                    <div class="invalid-feedback">
+                      ¡Por favor confirme que los datos ingresados   sean todos
+                      correctos!
+                    </div>
+                  </div>
+
+                  <div class="form-button mt-3">
+                    <button id="submit" type="submit" class="btn btn-primary">
+                      Registro
+                    </button>
+                  </div>
+                </form>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+ </html>
