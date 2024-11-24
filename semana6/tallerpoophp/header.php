@@ -7,5 +7,4 @@
 <link rel="stylesheet" href="/semana6/tallerpoophp/css/sweetalert2.min.css">
 <link rel="stylesheet" href="/semana6/tallerpoophp/css/select2.min.css">
 <link rel="stylesheet" href="/semana6/tallerpoophp/css/index.css">
-
-<!-- <link rel="stylesheet" href="/semana6/tallerpoophp/css/mystyle.css"> -->
+<link rel="stylesheet" href="/semana6/tallerpoophp/css/mystyle.css">
