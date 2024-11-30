@@ -54,4 +54,3 @@
            </form>
        </div>
    </nav>
-   <img src="/semana6/tallerpoophp/images/bg.jpg" alt="Imagen" class="img-fluid" style="width: 100%;">
