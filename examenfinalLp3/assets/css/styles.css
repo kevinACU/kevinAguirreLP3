@@ -1,0 +1,151 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9; /* Fondo suave y claro */
+    color: #3e3e3e; /* Color de texto oscuro */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Hacer que la sección ocupe el 100% de la altura */
+.vh-100 {
+    height: 100vh;
+}
+
+/* Contenedor de la sección principal */
+.container-fluid.h-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo de la imagen */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos para el formulario de login */
+form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para las etiquetas y campos del formulario */
+.form-outline {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #495057; /* Color gris oscuro para las etiquetas */
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Borde suave gris claro */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #6c757d; /* Borde gris oscuro al enfocar */
+    box-shadow: 0 0 12px rgba(108, 117, 125, 0.5);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #0056b3; /* Azul oscuro clásico */
+    border-color: #0056b3;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-primary:hover {
+    background-color: #003f87; /* Azul más oscuro en hover */
+    border-color: #003f87;
+}
+
+/* Estilos para el pie de página */
+.bg-dark {
+    background-color: #343a40; /* Fondo oscuro para pie de página */
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.py-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-4 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Animación para el formulario */
+form {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo responsive */
+@media (max-width: 576px) {
+    .container-fluid.h-custom {
+        padding: 15px;
+    }
+
+    form {
+        padding: 25px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
